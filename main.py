@@ -23,7 +23,7 @@ def print_report(text) -> None:
     print('--- Begin report of books/frankenstein.txt ---')
     print()
     print('{} words found in the document'.format(count_words(text)))
-    letter_dict = count_letters(text)
+    letter_dict = count_letters(text)   
     sorted_letter_dict = dict(sorted(letter_dict.items(), key=lambda k: k[1], reverse=True))
     for character, count in sorted_letter_dict.items():
         if character.isalpha():
